@@ -1,0 +1,20 @@
+#!/usr/local/bin python3
+
+from selenium.webdriver import Firefox
+from selenium.webdriver.firefox.options import Options
+
+opts = Options()
+opts.healess = False
+
+driver = Firefox(options=opts)
+browser = webdriver.Firefox()
+
+try:
+
+	driver.get('http://google.com')
+	print(browser.title)
+	assert 'This html page' == driver.title
+
+finally:
+
+	driver.quit()
