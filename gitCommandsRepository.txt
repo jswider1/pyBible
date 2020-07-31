@@ -12,4 +12,5 @@
 # github add file to repository
 # $ git add .
 # $ git commit -m "Add existing file"
+# $ git pull origin (your-branch) ## to make sure local and remote are on track together
 # $ git push origin (your-branch)
